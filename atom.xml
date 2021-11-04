@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-03T16:31:28.767Z</updated>
+  <updated>2021-11-04T07:49:56.939Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>利用递归实现快速排序</title>
+    <link href="http://example.com/2021/11/04/%E5%88%A9%E7%94%A8%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/"/>
+    <id>http://example.com/2021/11/04/%E5%88%A9%E7%94%A8%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/</id>
+    <published>2021-11-04T07:35:02.000Z</published>
+    <updated>2021-11-04T07:49:56.939Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;  近日在课上学习了冒泡排序法，联想到最近学习的函数的递归，&lt;br&gt;于是利用递归写了一个排序程序，代码如下：&lt;br&gt;#include&amp;lt;stdio.h&amp;gt;&lt;br&gt;#define N 10&lt;br&gt;void sort (int a[], int low, int</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>C语言函数学习中的一些注意事项</title>

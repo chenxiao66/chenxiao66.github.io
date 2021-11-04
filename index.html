@@ -71,6 +71,91 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-利用递归实现快速排序" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/11/04/%E5%88%A9%E7%94%A8%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" class="article-date">
+  <time class="dt-published" datetime="2021-11-04T07:35:02.000Z" itemprop="datePublished">2021-11-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/11/04/%E5%88%A9%E7%94%A8%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/">利用递归实现快速排序</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>  近日在课上学习了冒泡排序法，联想到最近学习的函数的递归，<br>于是利用递归写了一个排序程序，代码如下：<br>#include&lt;stdio.h&gt;<br>#define N 10<br>void sort (int a[], int low, int high);<br>int split (int a[],int low,int high);</p>
+<p>int main()<br>{<br>    int a[N],i;<br>    for(i=0;i&lt;N;i++)<br>        scanf(“%d”,&amp;a[i]);</p>
+<pre><code>sort(a,0,N-1);
+
+for(i=0;i&lt;N;i++)
+    printf(&quot; %d&quot;,a[i]);
+printf(&quot;\n&quot;);
+
+return 0;
+</code></pre>
+<p> } </p>
+<p>void sort (int a[],int low,int high)<br>{<br>    int middle;</p>
+<pre><code>if (low&gt;high)
+return;
+
+middle=split(a,low,high);
+
+
+sort(a,low,middle-1);
+sort(a,middle+1,high);
+</code></pre>
+<p>}</p>
+<p>int split(int a[],int low,int high)<br>{<br>    int part_element=a[low];</p>
+<pre><code>for(;;)&#123;
+    
+    while(low&lt;high&amp;&amp;part_element&lt;=a[high])
+        high--;
+    
+    if(low&gt;=high)
+    break;
+    
+    a[low]=a[high];
+    low++;
+    while(low&lt;high&amp;&amp;a[low]&lt;=part_element)
+        low++;
+        
+    if(low&gt;=high)
+    break;
+    
+    a[high]=a[low];
+    high--;
+&#125;
+
+a[high]=part_element;
+return high;
+</code></pre>
+<p>}<br>  代码定义了排序函数sort和分割数列函数split，先通过split得出<br>一个元素，利用这个元素将函数分割成两段，然后利用递归在两<br>段进行排序。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/11/04/%E5%88%A9%E7%94%A8%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" data-id="ckvknfrkq0005b0ur7nfd4eso" data-title="利用递归实现快速排序" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="关于-C语言函数学习中的一些注意事项" class="h-entry article article-type-关于" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/11/04/C%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" class="article-date">
@@ -98,7 +183,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/04/C%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" data-id="ckvjqncxw0000dgur6uql08ez" data-title="C语言函数学习中的一些注意事项" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/04/C%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" data-id="ckvknfrkh0000b0ur911icexb" data-title="C语言函数学习中的一些注意事项" class="article-share-link">Share</a>
       
       
       
@@ -128,7 +213,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/10/27/newpapername-1/" data-id="ckvjqncy10003dgurdg2acli2" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/10/27/newpapername-1/" data-id="ckvknfrkl0002b0ur176xgwex" data-title="" class="article-share-link">Share</a>
       
       
       
@@ -167,7 +252,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/26/%E3%80%82%E3%80%82%E3%80%82%E3%80%82/" data-id="ckvjqncxz0001dgur8fsh3sey" data-title="。。。。" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/26/%E3%80%82%E3%80%82%E3%80%82%E3%80%82/" data-id="ckvknfrkn0004b0uraq6t94z8" data-title="。。。。" class="article-share-link">Share</a>
       
       
       
@@ -206,7 +291,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/18/newpapername/" data-id="ckvjqncy20004dgurehl3e05t" data-title="newpapername" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/18/newpapername/" data-id="ckvknfrkm0003b0ur7cwahpoa" data-title="newpapername" class="article-share-link">Share</a>
       
       
       
@@ -257,7 +342,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/18/hello-world/" data-id="ckvjqncy10002dgur2er6czox" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/18/hello-world/" data-id="ckvknfrkk0001b0ur2ra9akmr" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -300,6 +385,10 @@
       <ul>
         
           <li>
+            <a href="/2021/11/04/%E5%88%A9%E7%94%A8%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/">利用递归实现快速排序</a>
+          </li>
+        
+          <li>
             <a href="/2021/11/04/C%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/">C语言函数学习中的一些注意事项</a>
           </li>
         
@@ -313,10 +402,6 @@
         
           <li>
             <a href="/2021/09/18/newpapername/">newpapername</a>
-          </li>
-        
-          <li>
-            <a href="/2021/09/18/hello-world/">Hello World</a>
           </li>
         
       </ul>
