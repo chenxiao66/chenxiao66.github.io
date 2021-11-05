@@ -71,6 +71,45 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-关于栈的基本认知" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/11/06/%E5%85%B3%E4%BA%8E%E6%A0%88%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AE%A4%E7%9F%A5/" class="article-date">
+  <time class="dt-published" datetime="2021-11-05T16:14:46.000Z" itemprop="datePublished">2021-11-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/11/06/%E5%85%B3%E4%BA%8E%E6%A0%88%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AE%A4%E7%9F%A5/">关于栈的基本认知</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>1.栈可以储存具有相同数据类型的多个数据项。<br>2.栈的操作是受限的，只能往栈中压入数据项（把数据加到栈顶）和从栈中弹出数据项（从同一端移走数据项）。禁止测试或修改不在栈顶的数据项。<br>即使用栈存储数据元素，对数据元素的“存”和“取”有严格的规定：数据按一定的顺序存储到栈中，当需要调取栈中某数据元素时，需要将在该数<br>据元素之后进栈的先出栈，该数据元素才能从栈中提取出来。例如栈中存放了 4 个数据元素，进栈的顺序是 A 先进栈，然后 B 进，然后 C 进，最后<br>D进栈；当需要调取 A 时，首先 D 出栈，然后 C 出栈，然后 B 出栈，最后 A 才能出栈被调用。<br>3.栈有两种类型顺序栈和链栈。顺序栈通过数组实现，链栈用线性表的链式存储结构实现。<br>4.栈存储结构调取栈中数据元素时，要避免出现“上溢”和“下溢”的情况：“上溢”：在栈已经存满数据元素的情况下，如果继续向栈内存入数据，<br>栈存储就会出错。“下溢”：在栈内为空的状态下，如果对栈继续进行取数据的操作，就会出错。但是链栈不会出现”上溢“。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/11/06/%E5%85%B3%E4%BA%8E%E6%A0%88%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AE%A4%E7%9F%A5/" data-id="ckvmkygbw0005dgur94ld0z3k" data-title="关于栈的基本认知" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-利用递归实现快速排序" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/11/04/%E5%88%A9%E7%94%A8%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" class="article-date">
@@ -144,7 +183,7 @@ return high;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/04/%E5%88%A9%E7%94%A8%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" data-id="ckvknfrkq0005b0ur7nfd4eso" data-title="利用递归实现快速排序" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/04/%E5%88%A9%E7%94%A8%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" data-id="ckvmkygc00006dguraxzkcaq6" data-title="利用递归实现快速排序" class="article-share-link">Share</a>
       
       
       
@@ -183,7 +222,7 @@ return high;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/04/C%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" data-id="ckvknfrkh0000b0ur911icexb" data-title="C语言函数学习中的一些注意事项" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/04/C%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" data-id="ckvmkygbp0000dgur04svbol3" data-title="C语言函数学习中的一些注意事项" class="article-share-link">Share</a>
       
       
       
@@ -213,7 +252,7 @@ return high;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/10/27/newpapername-1/" data-id="ckvknfrkl0002b0ur176xgwex" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/10/27/newpapername-1/" data-id="ckvmkygbv0003dgur15br3vqz" data-title="" class="article-share-link">Share</a>
       
       
       
@@ -252,7 +291,7 @@ return high;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/26/%E3%80%82%E3%80%82%E3%80%82%E3%80%82/" data-id="ckvknfrkn0004b0uraq6t94z8" data-title="。。。。" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/26/%E3%80%82%E3%80%82%E3%80%82%E3%80%82/" data-id="ckvmkygbv0004dgur4mw3bz0p" data-title="。。。。" class="article-share-link">Share</a>
       
       
       
@@ -291,7 +330,7 @@ return high;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/18/newpapername/" data-id="ckvknfrkm0003b0ur7cwahpoa" data-title="newpapername" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/18/newpapername/" data-id="ckvmkygbu0002dgur9vscdww6" data-title="newpapername" class="article-share-link">Share</a>
       
       
       
@@ -342,7 +381,7 @@ return high;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/18/hello-world/" data-id="ckvknfrkk0001b0ur2ra9akmr" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/18/hello-world/" data-id="ckvmkygbs0001dgur4beoedft" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -385,6 +424,10 @@ return high;
       <ul>
         
           <li>
+            <a href="/2021/11/06/%E5%85%B3%E4%BA%8E%E6%A0%88%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AE%A4%E7%9F%A5/">关于栈的基本认知</a>
+          </li>
+        
+          <li>
             <a href="/2021/11/04/%E5%88%A9%E7%94%A8%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/">利用递归实现快速排序</a>
           </li>
         
@@ -398,10 +441,6 @@ return high;
         
           <li>
             <a href="/2021/09/26/%E3%80%82%E3%80%82%E3%80%82%E3%80%82/">。。。。</a>
-          </li>
-        
-          <li>
-            <a href="/2021/09/18/newpapername/">newpapername</a>
           </li>
         
       </ul>

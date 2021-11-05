@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-04T07:49:56.939Z</updated>
+  <updated>2021-11-05T16:15:35.722Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于栈的基本认知</title>
+    <link href="http://example.com/2021/11/06/%E5%85%B3%E4%BA%8E%E6%A0%88%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AE%A4%E7%9F%A5/"/>
+    <id>http://example.com/2021/11/06/%E5%85%B3%E4%BA%8E%E6%A0%88%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AE%A4%E7%9F%A5/</id>
+    <published>2021-11-05T16:14:46.000Z</published>
+    <updated>2021-11-05T16:15:35.722Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;1.栈可以储存具有相同数据类型的多个数据项。&lt;br&gt;2.栈的操作是受限的，只能往栈中压入数据项（把数据加到栈顶）和从栈中弹出数据项（从同一端移走数据项）。禁止测试或修改不在栈顶的数据项。&lt;br&gt;即使用栈存储数据元素，对数据元素的“存”和“取”有严格的规定：数据按一定的顺序存</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>利用递归实现快速排序</title>
