@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>数组与指针 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="title: C语言提高效率的一些方法date: 2021-10-27 13:22:01tags:—1.定义时节约内存，如int会占用4字节的内存而short只会占用2字节的内存，若无必要尽量节约内存，这样可以提高运行效率。2.运算时尽量减少运算步骤，根据实际情况减少运算步骤来提高效率。3.当switch语句中的case标号很多时，为了减少比较的次数，可以使用嵌套switch语句。把发生频率高的">
+  <meta name="description" content="数组变量其实是特殊的指针，数组变量本身表达地址，如  int a[10];int*p&#x3D;a;即无需使用&amp;取地址。但是数组的单元表达的是变量，取地址时仍需要用&amp;。所以[]既可以对数组使用也可以对指针使用，即p[0]&#x3D;&#x3D;p,同理，也既可以对指针使用也可以对数组使用。实际上数组变量是const的指针，所以数组无法被赋值，就解释了之前学习是所说的不能将一个数组中每个元素的值赋予另一个数组的各">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2021/10/27/newpapername-1/index.html">
+<meta property="og:title" content="数组与指针">
+<meta property="og:url" content="http://example.com/2021/11/13/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title: C语言提高效率的一些方法date: 2021-10-27 13:22:01tags:—1.定义时节约内存，如int会占用4字节的内存而short只会占用2字节的内存，若无必要尽量节约内存，这样可以提高运行效率。2.运算时尽量减少运算步骤，根据实际情况减少运算步骤来提高效率。3.当switch语句中的case标号很多时，为了减少比较的次数，可以使用嵌套switch语句。把发生频率高的">
+<meta property="og:description" content="数组变量其实是特殊的指针，数组变量本身表达地址，如  int a[10];int*p&#x3D;a;即无需使用&amp;取地址。但是数组的单元表达的是变量，取地址时仍需要用&amp;。所以[]既可以对数组使用也可以对指针使用，即p[0]&#x3D;&#x3D;p,同理，也既可以对指针使用也可以对数组使用。实际上数组变量是const的指针，所以数组无法被赋值，就解释了之前学习是所说的不能将一个数组中每个元素的值赋予另一个数组的各">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-10-27T05:22:01.865Z">
-<meta property="article:modified_time" content="2021-10-28T08:52:42.623Z">
+<meta property="article:published_time" content="2021-11-13T10:56:09.000Z">
+<meta property="article:modified_time" content="2021-11-13T10:57:34.446Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -73,25 +73,34 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-newpapername-1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-数组与指针" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2021/10/27/newpapername-1/" class="article-date">
-  <time class="dt-published" datetime="2021-10-27T05:22:01.865Z" itemprop="datePublished">2021-10-27</time>
+    <a href="/2021/11/13/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/" class="article-date">
+  <time class="dt-published" datetime="2021-11-13T10:56:09.000Z" itemprop="datePublished">2021-11-13</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      数组与指针
+    </h1>
+  
+
+      </header>
+    
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <hr>
-<p>title: C语言提高效率的一些方法<br>date: 2021-10-27 13:22:01<br>tags:—<br>1.定义时节约内存，如int会占用4字节的内存而short只会占用2字节的内存，若无必要<br>尽量节约内存，这样可以提高运行效率。<br>2.运算时尽量减少运算步骤，根据实际情况减少运算步骤来提高效率。<br>3.当switch语句中的case标号很多时，为了减少比较的次数，可以使用嵌套switch语句。<br>把发生频率高的case标号放在一个switch语句中，并且是嵌套switch语句的最外层，发<br>生相对频率相对低的case标号放在另一个switch语句中。<br>4.当返回的函数值不需要被用到，可以使用void使函数值不被返回，可以提高程序效率。<br>5.使用增量和减量操作符。在使用到加一和减一操作时尽量使用增量和减量操作符，效率<br>要高于赋值语句。</p>
+        <p>数组变量其实是特殊的指针，数组变量本身表达地址，如  int a[10];int*p=a;即无需使用<br>&amp;取地址。但是数组的单元表达的是变量，取地址时仍需要用&amp;。<br>所以[]既可以对数组使用也可以对指针使用，即p[0]==<em>p,同理，</em>也既可以对指针使用也<br>可以对数组使用。<br>实际上数组变量是const的指针，所以数组无法被赋值，就解释了之前学习是所说的不能<br>将一个数组中每个元素的值赋予另一个数组的各个元素。<br>因为数组变量已经是const的指针了，所以当出现const int a[]={1，2，3，4，5}；时，<br>表示的是数组中的每个单元都是const int，所以必须通过初始化进行赋值。因为把数组传<br>进函数时传递的是地址，所以可以通过将参数设为const来保护数组内的单元的值不会被函<br>数破环，例 int sum（const int a[],int length);。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/10/27/newpapername-1/" data-id="ckvxp3tyc0001kwurhu2tfa1s" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/13/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/" data-id="ckvxp3tyj0006kwur4lerbcec" data-title="数组与指针" class="article-share-link">Share</a>
       
       
       
@@ -101,19 +110,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2021/11/04/C%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          C语言函数学习中的一些注意事项
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/09/26/%E3%80%82%E3%80%82%E3%80%82%E3%80%82/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2021/11/06/%E5%85%B3%E4%BA%8E%E6%A0%88%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AE%A4%E7%9F%A5/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">。。。。</div>
+      <div class="article-nav-title">关于栈的基本认知</div>
     </a>
   
 </nav>

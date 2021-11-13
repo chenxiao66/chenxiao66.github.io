@@ -71,6 +71,45 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-数组与指针" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/11/13/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/" class="article-date">
+  <time class="dt-published" datetime="2021-11-13T10:56:09.000Z" itemprop="datePublished">2021-11-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/11/13/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/">数组与指针</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>数组变量其实是特殊的指针，数组变量本身表达地址，如  int a[10];int*p=a;即无需使用<br>&amp;取地址。但是数组的单元表达的是变量，取地址时仍需要用&amp;。<br>所以[]既可以对数组使用也可以对指针使用，即p[0]==<em>p,同理，</em>也既可以对指针使用也<br>可以对数组使用。<br>实际上数组变量是const的指针，所以数组无法被赋值，就解释了之前学习是所说的不能<br>将一个数组中每个元素的值赋予另一个数组的各个元素。<br>因为数组变量已经是const的指针了，所以当出现const int a[]={1，2，3，4，5}；时，<br>表示的是数组中的每个单元都是const int，所以必须通过初始化进行赋值。因为把数组传<br>进函数时传递的是地址，所以可以通过将参数设为const来保护数组内的单元的值不会被函<br>数破环，例 int sum（const int a[],int length);。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/11/13/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/" data-id="ckvxp3tyj0006kwur4lerbcec" data-title="数组与指针" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-关于栈的基本认知" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/11/06/%E5%85%B3%E4%BA%8E%E6%A0%88%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AE%A4%E7%9F%A5/" class="article-date">
@@ -98,7 +137,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/06/%E5%85%B3%E4%BA%8E%E6%A0%88%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AE%A4%E7%9F%A5/" data-id="ckvmkygbw0005dgur94ld0z3k" data-title="关于栈的基本认知" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/06/%E5%85%B3%E4%BA%8E%E6%A0%88%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AE%A4%E7%9F%A5/" data-id="ckvxp3tyf0004kwur17jw97ce" data-title="关于栈的基本认知" class="article-share-link">Share</a>
       
       
       
@@ -183,7 +222,7 @@ return high;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/04/%E5%88%A9%E7%94%A8%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" data-id="ckvmkygc00006dguraxzkcaq6" data-title="利用递归实现快速排序" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/04/%E5%88%A9%E7%94%A8%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" data-id="ckvxp3tyk0007kwurgwczbqcy" data-title="利用递归实现快速排序" class="article-share-link">Share</a>
       
       
       
@@ -222,7 +261,7 @@ return high;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/04/C%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" data-id="ckvmkygbp0000dgur04svbol3" data-title="C语言函数学习中的一些注意事项" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/04/C%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" data-id="ckvxp3ty80000kwurgac8ft93" data-title="C语言函数学习中的一些注意事项" class="article-share-link">Share</a>
       
       
       
@@ -252,7 +291,7 @@ return high;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/10/27/newpapername-1/" data-id="ckvmkygbv0003dgur15br3vqz" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/10/27/newpapername-1/" data-id="ckvxp3tyc0001kwurhu2tfa1s" data-title="" class="article-share-link">Share</a>
       
       
       
@@ -291,7 +330,7 @@ return high;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/26/%E3%80%82%E3%80%82%E3%80%82%E3%80%82/" data-id="ckvmkygbv0004dgur4mw3bz0p" data-title="。。。。" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/26/%E3%80%82%E3%80%82%E3%80%82%E3%80%82/" data-id="ckvxp3tyg0005kwur79b85fif" data-title="。。。。" class="article-share-link">Share</a>
       
       
       
@@ -330,7 +369,7 @@ return high;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/18/newpapername/" data-id="ckvmkygbu0002dgur9vscdww6" data-title="newpapername" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/18/newpapername/" data-id="ckvxp3tye0003kwur1p4i2seg" data-title="newpapername" class="article-share-link">Share</a>
       
       
       
@@ -381,7 +420,7 @@ return high;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/18/hello-world/" data-id="ckvmkygbs0001dgur4beoedft" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/18/hello-world/" data-id="ckvxp3tye0002kwur6ppk3qoq" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -424,6 +463,10 @@ return high;
       <ul>
         
           <li>
+            <a href="/2021/11/13/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/">数组与指针</a>
+          </li>
+        
+          <li>
             <a href="/2021/11/06/%E5%85%B3%E4%BA%8E%E6%A0%88%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AE%A4%E7%9F%A5/">关于栈的基本认知</a>
           </li>
         
@@ -437,10 +480,6 @@ return high;
         
           <li>
             <a href="/2021/10/27/newpapername-1/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2021/09/26/%E3%80%82%E3%80%82%E3%80%82%E3%80%82/">。。。。</a>
           </li>
         
       </ul>

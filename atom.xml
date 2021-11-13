@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-05T16:15:35.722Z</updated>
+  <updated>2021-11-13T10:57:34.446Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数组与指针</title>
+    <link href="http://example.com/2021/11/13/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/"/>
+    <id>http://example.com/2021/11/13/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/</id>
+    <published>2021-11-13T10:56:09.000Z</published>
+    <updated>2021-11-13T10:57:34.446Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;数组变量其实是特殊的指针，数组变量本身表达地址，如  int</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>关于栈的基本认知</title>
