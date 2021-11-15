@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-15T11:48:51.577Z</updated>
+  <updated>2021-11-15T12:44:06.741Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>php基础语法学习Ⅰ</title>
+    <link href="http://example.com/2021/11/15/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A0/"/>
+    <id>http://example.com/2021/11/15/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A0/</id>
+    <published>2021-11-15T12:43:18.000Z</published>
+    <updated>2021-11-15T12:44:06.741Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;1.php脚本以&lt;?php开始以?&gt;结束。且php文件中通常包含HTML标签。&lt;br&gt;2.php中有两种在浏览器中输出文本的基础指令：echo和print。&lt;br&gt;3.php中注释与C语言中相同。&lt;br&gt;4.PHP 变量规则：&lt;br&gt;变量以 $</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>burp的基本模块的初步认识</title>
