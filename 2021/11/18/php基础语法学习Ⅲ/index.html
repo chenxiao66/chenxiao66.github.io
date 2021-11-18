@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>php基础语法学习Ⅲ | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="1.php中的松散比较和严格比较松散比较为&#x3D;&#x3D;，它只比较值不比较类型。严格比较为&#x3D;&#x3D;&#x3D;，除了比较值，它也比较类型。2.php中常量在php中设置常量一般使用define（）函数。格式为define（$name,$value[,$case_insensitive&#x3D;false])其中name为常量名称，value为常量的值，case_insensitive为可选参数，若设为true，则该函数大小写不敏">
+<meta property="og:type" content="article">
+<meta property="og:title" content="php基础语法学习Ⅲ">
+<meta property="og:url" content="http://example.com/2021/11/18/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.php中的松散比较和严格比较松散比较为&#x3D;&#x3D;，它只比较值不比较类型。严格比较为&#x3D;&#x3D;&#x3D;，除了比较值，它也比较类型。2.php中常量在php中设置常量一般使用define（）函数。格式为define（$name,$value[,$case_insensitive&#x3D;false])其中name为常量名称，value为常量的值，case_insensitive为可选参数，若设为true，则该函数大小写不敏">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-11-18T07:29:37.000Z">
+<meta property="article:modified_time" content="2021-11-18T07:30:09.996Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-php基础语法学习Ⅲ" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/11/18/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A2/" class="article-date">
+  <time class="dt-published" datetime="2021-11-18T07:29:37.000Z" itemprop="datePublished">2021-11-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      php基础语法学习Ⅲ
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>1.php中的松散比较和严格比较<br>松散比较为==，它只比较值不比较类型。严格比较为===，除了比较值，它也比较<br>类型。<br>2.php中常量<br>在php中设置常量一般使用define（）函数。格式为define（$name,$value[,$case<br>_insensitive=false])其中name为常量名称，value为常量的值，case_insensitive为<br>可选参数，若设为true，则该函数大小写不敏感，默认为大小写敏感。<br>3.PHP 中，只有一个字符串运算符：并置运算符 . 用于把两个字符串值连接起来。<br>4.php中若要知道字符串的长度，可使用strlen（）函数。<br>5.php中我们可以使用strpos（）函数在字符串中查找一个字符或一段文本。若在字<br>符串中找到匹配，函数会返回第一个匹配的字符位置。若未找到会返回FALSE。<br>注意：字符串第一个字符的位置时0而不是1。<br>6.php中的算数运算符、赋值运算符、递增递减运算符与条件运算符都与C语言相同。<br>7.比较运算符中x&lt;&gt;y为不等于相当于x!=y，x!==y为绝对不等于，表示除了比较值还<br>需比较类型。<br>8.逻辑运算符中x xor y为异或，表示如果x和y中有且仅有一个为true，则返回true。<br>9.php7+中支持组合比较符&lt;=&gt;，它可以轻松实现两个变量的比较，且不局限与数值<br>类数据的比较。例子如下：<br>$c=$&lt;a=&gt;$b;<br>表示若$a&gt;$b，则$c值为1。若$a==$b,则$c的值为0。若$a&lt;$b,则$c的值为-1。<br>10.$c=&amp;$a;表示c为a的引用，即c和a为同一个变量了。其中&amp;时引用的意思，php中<br>没有指针的概念。<br>11.php中数组<br>php中使用array（）函数创建数组。<br>php中可以使用count（）函数返回数组的元素数量。<br>php中有三种类型的数组：数值数组、关联数组、多维数组。其中数值数组与C语言中<br>的数组类似。<br>关联数组是使用你分配个数组的指定的键的数组，创建关联数组的方法如下：<br>$num=array(“a”=&gt;”1”,”b”=&gt;”2”,”c”=&gt;”3”);<br>此时echo $num[‘a’];会输出1。<br>12.php中数组排序函数<br>sort（），将数组中元素按字母升序排列。<br>rsort（），将数组中元素按字母降序排列。<br>asort（），将关联数组中元素按数组的值升序排列。<br>arsort（），将关联数组中元素按数组的值降序排列。<br>ksort（），将关联数组中的元素按数组的键的字母升序排列。<br>krsort（），将关联数组中的元素按数组的键的字母降序排列。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/11/18/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A2/" data-id="ckw4mw45s00075gur7ugm5jlh" data-title="php基础语法学习Ⅲ" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2021/11/17/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">php基础语法学习Ⅱ</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/11/18/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A2/">php基础语法学习Ⅲ</a>
+          </li>
+        
+          <li>
+            <a href="/2021/11/17/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A1/">php基础语法学习Ⅱ</a>
+          </li>
+        
+          <li>
+            <a href="/2021/11/15/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A0/">php基础语法学习Ⅰ</a>
+          </li>
+        
+          <li>
+            <a href="/2021/11/15/burp%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A8%A1%E5%9D%97%E7%9A%84%E5%88%9D%E6%AD%A5%E8%AE%A4%E8%AF%86/">burp的基本模块的初步认识</a>
+          </li>
+        
+          <li>
+            <a href="/2021/11/13/%E5%85%B3%E4%BA%8E%E6%8C%87%E9%92%88%E6%B5%85%E5%AD%A6%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B%E9%A1%B9/">关于指针浅学的一些事项</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

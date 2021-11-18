@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-17T07:47:42.167Z</updated>
+  <updated>2021-11-18T07:30:09.996Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>php基础语法学习Ⅲ</title>
+    <link href="http://example.com/2021/11/18/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A2/"/>
+    <id>http://example.com/2021/11/18/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A2/</id>
+    <published>2021-11-18T07:29:37.000Z</published>
+    <updated>2021-11-18T07:30:09.996Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;1.php中的松散比较和严格比较&lt;br&gt;松散比较为==，它只比较值不比较类型。严格比较为===，除了比较值，它也比较&lt;br&gt;类型。&lt;br&gt;2.php中常量&lt;br&gt;在php中设置常量一般使用define（）函数。格式为define（$name,$value[,$case&lt;br</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>php基础语法学习Ⅱ</title>

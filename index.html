@@ -71,6 +71,45 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-php基础语法学习Ⅲ" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/11/18/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A2/" class="article-date">
+  <time class="dt-published" datetime="2021-11-18T07:29:37.000Z" itemprop="datePublished">2021-11-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/11/18/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A2/">php基础语法学习Ⅲ</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>1.php中的松散比较和严格比较<br>松散比较为==，它只比较值不比较类型。严格比较为===，除了比较值，它也比较<br>类型。<br>2.php中常量<br>在php中设置常量一般使用define（）函数。格式为define（$name,$value[,$case<br>_insensitive=false])其中name为常量名称，value为常量的值，case_insensitive为<br>可选参数，若设为true，则该函数大小写不敏感，默认为大小写敏感。<br>3.PHP 中，只有一个字符串运算符：并置运算符 . 用于把两个字符串值连接起来。<br>4.php中若要知道字符串的长度，可使用strlen（）函数。<br>5.php中我们可以使用strpos（）函数在字符串中查找一个字符或一段文本。若在字<br>符串中找到匹配，函数会返回第一个匹配的字符位置。若未找到会返回FALSE。<br>注意：字符串第一个字符的位置时0而不是1。<br>6.php中的算数运算符、赋值运算符、递增递减运算符与条件运算符都与C语言相同。<br>7.比较运算符中x&lt;&gt;y为不等于相当于x!=y，x!==y为绝对不等于，表示除了比较值还<br>需比较类型。<br>8.逻辑运算符中x xor y为异或，表示如果x和y中有且仅有一个为true，则返回true。<br>9.php7+中支持组合比较符&lt;=&gt;，它可以轻松实现两个变量的比较，且不局限与数值<br>类数据的比较。例子如下：<br>$c=$&lt;a=&gt;$b;<br>表示若$a&gt;$b，则$c值为1。若$a==$b,则$c的值为0。若$a&lt;$b,则$c的值为-1。<br>10.$c=&amp;$a;表示c为a的引用，即c和a为同一个变量了。其中&amp;时引用的意思，php中<br>没有指针的概念。<br>11.php中数组<br>php中使用array（）函数创建数组。<br>php中可以使用count（）函数返回数组的元素数量。<br>php中有三种类型的数组：数值数组、关联数组、多维数组。其中数值数组与C语言中<br>的数组类似。<br>关联数组是使用你分配个数组的指定的键的数组，创建关联数组的方法如下：<br>$num=array(“a”=&gt;”1”,”b”=&gt;”2”,”c”=&gt;”3”);<br>此时echo $num[‘a’];会输出1。<br>12.php中数组排序函数<br>sort（），将数组中元素按字母升序排列。<br>rsort（），将数组中元素按字母降序排列。<br>asort（），将关联数组中元素按数组的值升序排列。<br>arsort（），将关联数组中元素按数组的值降序排列。<br>ksort（），将关联数组中的元素按数组的键的字母升序排列。<br>krsort（），将关联数组中的元素按数组的键的字母降序排列。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/11/18/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A2/" data-id="ckw4mw45s00075gur7ugm5jlh" data-title="php基础语法学习Ⅲ" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-php基础语法学习Ⅱ" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/11/17/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A1/" class="article-date">
@@ -98,7 +137,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/17/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A1/" data-id="ckw382zha00042cur0inzc3gv" data-title="php基础语法学习Ⅱ" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/17/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A1/" data-id="ckw4mw45r00055gur2zhf33c0" data-title="php基础语法学习Ⅱ" class="article-share-link">Share</a>
       
       
       
@@ -146,7 +185,7 @@ testStatic();   //output 3
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/15/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A0/" data-id="ckw382zhc00072cur23redlvu" data-title="php基础语法学习Ⅰ" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/15/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A0/" data-id="ckw4mw45s00065gur8cnb05ng" data-title="php基础语法学习Ⅰ" class="article-share-link">Share</a>
       
       
       
@@ -185,7 +224,7 @@ testStatic();   //output 3
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/15/burp%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A8%A1%E5%9D%97%E7%9A%84%E5%88%9D%E6%AD%A5%E8%AE%A4%E8%AF%86/" data-id="ckw382zhb00052cur8i9v3cmj" data-title="burp的基本模块的初步认识" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/15/burp%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A8%A1%E5%9D%97%E7%9A%84%E5%88%9D%E6%AD%A5%E8%AE%A4%E8%AF%86/" data-id="ckw4mw45m00035gur58x0b0x9" data-title="burp的基本模块的初步认识" class="article-share-link">Share</a>
       
       
       
@@ -224,7 +263,7 @@ testStatic();   //output 3
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/13/%E5%85%B3%E4%BA%8E%E6%8C%87%E9%92%88%E6%B5%85%E5%AD%A6%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B%E9%A1%B9/" data-id="ckw382zhd00082curda4h0k1d" data-title="关于指针浅学的一些事项" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/13/%E5%85%B3%E4%BA%8E%E6%8C%87%E9%92%88%E6%B5%85%E5%AD%A6%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B%E9%A1%B9/" data-id="ckw4mw45t00095gurgwidgut5" data-title="关于指针浅学的一些事项" class="article-share-link">Share</a>
       
       
       
@@ -263,7 +302,7 @@ testStatic();   //output 3
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/13/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/" data-id="ckw382zhf000b2curfg9i1i7v" data-title="数组与指针" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/13/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/" data-id="ckw4mw45v000c5gur9kfgah2t" data-title="数组与指针" class="article-share-link">Share</a>
       
       
       
@@ -302,7 +341,7 @@ testStatic();   //output 3
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/06/%E5%85%B3%E4%BA%8E%E6%A0%88%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AE%A4%E7%9F%A5/" data-id="ckw382zhd00092cure7fbg37z" data-title="关于栈的基本认知" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/06/%E5%85%B3%E4%BA%8E%E6%A0%88%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AE%A4%E7%9F%A5/" data-id="ckw4mw45t000a5gur871i0bnj" data-title="关于栈的基本认知" class="article-share-link">Share</a>
       
       
       
@@ -387,7 +426,7 @@ return high;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/04/%E5%88%A9%E7%94%A8%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" data-id="ckw382zhe000a2curg5vlhdwe" data-title="利用递归实现快速排序" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/04/%E5%88%A9%E7%94%A8%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" data-id="ckw4mw45v000b5gurfuvc9o6v" data-title="利用递归实现快速排序" class="article-share-link">Share</a>
       
       
       
@@ -426,7 +465,7 @@ return high;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/04/C%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" data-id="ckw382zh700012cur964y47k3" data-title="C语言函数学习中的一些注意事项" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/04/C%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" data-id="ckw4mw45g00005gur7gj67zef" data-title="C语言函数学习中的一些注意事项" class="article-share-link">Share</a>
       
       
       
@@ -456,46 +495,7 @@ return high;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/10/27/newpapername-1/" data-id="ckw382zha00032cur6mf1558u" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-。。。。" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/09/26/%E3%80%82%E3%80%82%E3%80%82%E3%80%82/" class="article-date">
-  <time class="dt-published" datetime="2021-09-26T14:54:03.000Z" itemprop="datePublished">2021-09-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/09/26/%E3%80%82%E3%80%82%E3%80%82%E3%80%82/">。。。。</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>今天任在艰难的web入门，教程看得云里雾里又跃跃欲试，改日找个靶场试试身手，干巴得。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/26/%E3%80%82%E3%80%82%E3%80%82%E3%80%82/" data-id="ckw382zhc00062curg1fm2zvn" data-title="。。。。" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/10/27/newpapername-1/" data-id="ckw4mw45l00025gur7d6dhy6d" data-title="" class="article-share-link">Share</a>
       
       
       
@@ -543,6 +543,10 @@ return high;
       <ul>
         
           <li>
+            <a href="/2021/11/18/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A2/">php基础语法学习Ⅲ</a>
+          </li>
+        
+          <li>
             <a href="/2021/11/17/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A1/">php基础语法学习Ⅱ</a>
           </li>
         
@@ -556,10 +560,6 @@ return high;
         
           <li>
             <a href="/2021/11/13/%E5%85%B3%E4%BA%8E%E6%8C%87%E9%92%88%E6%B5%85%E5%AD%A6%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B%E9%A1%B9/">关于指针浅学的一些事项</a>
-          </li>
-        
-          <li>
-            <a href="/2021/11/13/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/">数组与指针</a>
           </li>
         
       </ul>
