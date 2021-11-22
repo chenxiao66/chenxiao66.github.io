@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-18T07:30:09.996Z</updated>
+  <updated>2021-11-22T13:04:12.173Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>php基础语法学习Ⅳ</title>
+    <link href="http://example.com/2021/11/22/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A3/"/>
+    <id>http://example.com/2021/11/22/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A3/</id>
+    <published>2021-11-22T13:03:35.000Z</published>
+    <updated>2021-11-22T13:04:12.173Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;1.php中的foreach循环&lt;br&gt;foreach循环用于遍历数组，其格式为：&lt;br&gt;foreach（$array as</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>php基础语法学习Ⅲ</title>

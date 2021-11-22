@@ -71,6 +71,46 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-php基础语法学习Ⅳ" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/11/22/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A3/" class="article-date">
+  <time class="dt-published" datetime="2021-11-22T13:03:35.000Z" itemprop="datePublished">2021-11-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/11/22/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A3/">php基础语法学习Ⅳ</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>1.php中的foreach循环<br>foreach循环用于遍历数组，其格式为：<br>foreach（$array as $value)<br>{<br><em><strong>；<br>}<br>其中array为数组名称，</strong></em>为每次循环要执行的代码。此时每进行一次<br>循环，当前元素的值就会被赋值给value，然后下一次循环时数组就会<br>往后一位。<br>还有：<br>foreach（$array as $key =&gt;$value)<br>{<br>***;<br>}<br>此时每进行一次循环，当前元素的值就会被赋值给value而键会被赋给<br>key，然后下一次循环时数组就会往后一位。适用于关联数组。<br>2.php中函数<br>创建函数的格式如下：<br>function functionname（）<br>{<br><em><strong>；<br>}<br>其中functionname为函数名，</strong></em>为要执行的代码。<br>注意：函数名称不能以数字开头，应该以字母或下划线开头，而且为了<br>便于审计代码函数名应提示出它的功能。<br>若需要函数返回一个值，可以使用return语句。</p>
+<p>3.php中的魔术常量<br>php中有8个魔术常量，他们的值随他们在代码中的位置改变而改变。<br>这些特殊的常量不区分大小写。<br>_line_文件中当前的行数。<br>_file_文件的完整路径和文件名。<br><em>dir_文件所在的目录，它等价于dirname（_file</em>)。<br>_function_函数名称。<br>_class_类的名称。<br>_trait_trait的名称。<br>_method_类的方法名。<br>_namespace_当前命名空间的名称。<br>4.php中的命名空间<br>默认情况下，所有常量、类和函数名都放在全局空间下，我们可以使<br>用namespace声明命名空间，其语法如下：<br>namespace MyProject {<br>    const CONNECT_OK = 1;<br>    class Connection { /* … <em>/ }<br>    function connect() { /</em> … <em>/  }<br>}<br>如果一个文件中包含命名空间，它必须在所有其他代码前声明命名空<br>间。在声明命名空间之前唯一合法的代码是用于定义源文件编码方式<br>的 declare 语句。所有非 PHP 代码包括空白符都不能出现在命名空<br>间的声明之前。当然，我们也可以在同一个文件中定义不同的命名空<br>间代码。将全局的非命名空间中的代码与命名空间中的代码组合在一<br>起，只能使用大括号形式的语法。全局代码必须用一个不带名称的na<br>-mespace 语句加上大括号括起来。<br>命名空间的名字可以使用分层次的方式定义,语法如下：<br>namespace MyProject\Sub\Level;<br>const CONNECT_OK = 1;<br>class Connection { /</em> … <em>/ }<br>function Connect() { /</em> … */  }<br>PHP中命名空间可以解决以下两类问题：<br>（1）用户编写的代码与PHP内部的类/函数/常量或第三方类/函数/常<br>量之间的名字冲突。<br>（2）为很长的标识符名称(通常是为了缓解第一类问题而定义的)创建<br>一个别名（或简短）的名称，提高源代码的可读性。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/11/22/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A3/" data-id="ckwaol0sz0008xourfdsuc6k0" data-title="php基础语法学习Ⅳ" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-php基础语法学习Ⅲ" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/11/18/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A2/" class="article-date">
@@ -98,7 +138,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/18/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A2/" data-id="ckw4my6zc00069wur2f16exqp" data-title="php基础语法学习Ⅲ" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/18/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A2/" data-id="ckwaol0sy0006xour2ily10h5" data-title="php基础语法学习Ⅲ" class="article-share-link">Share</a>
       
       
       
@@ -137,7 +177,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/17/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A1/" data-id="ckw4my6zc00079wurcbkn71jx" data-title="php基础语法学习Ⅱ" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/17/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A1/" data-id="ckwaol0sy0005xoura6rrapa5" data-title="php基础语法学习Ⅱ" class="article-share-link">Share</a>
       
       
       
@@ -185,7 +225,7 @@ testStatic();   //output 3
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/15/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A0/" data-id="ckw4my6zb00059wur7o5nhh43" data-title="php基础语法学习Ⅰ" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/15/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A0/" data-id="ckwaol0sw0003xour72x7bmr6" data-title="php基础语法学习Ⅰ" class="article-share-link">Share</a>
       
       
       
@@ -224,7 +264,7 @@ testStatic();   //output 3
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/15/burp%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A8%A1%E5%9D%97%E7%9A%84%E5%88%9D%E6%AD%A5%E8%AE%A4%E8%AF%86/" data-id="ckw4my6z800019wurfzjz0099" data-title="burp的基本模块的初步认识" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/15/burp%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A8%A1%E5%9D%97%E7%9A%84%E5%88%9D%E6%AD%A5%E8%AE%A4%E8%AF%86/" data-id="ckwaol0sw0002xourhd2q8qsc" data-title="burp的基本模块的初步认识" class="article-share-link">Share</a>
       
       
       
@@ -263,7 +303,7 @@ testStatic();   //output 3
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/13/%E5%85%B3%E4%BA%8E%E6%8C%87%E9%92%88%E6%B5%85%E5%AD%A6%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B%E9%A1%B9/" data-id="ckw4my6zd00099wurhjntgogj" data-title="关于指针浅学的一些事项" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/13/%E5%85%B3%E4%BA%8E%E6%8C%87%E9%92%88%E6%B5%85%E5%AD%A6%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B%E9%A1%B9/" data-id="ckwaol0t0000axour8ami9qk8" data-title="关于指针浅学的一些事项" class="article-share-link">Share</a>
       
       
       
@@ -302,7 +342,7 @@ testStatic();   //output 3
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/13/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/" data-id="ckw4my6zi000c9wura6ps8fh0" data-title="数组与指针" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/13/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/" data-id="ckwaol0t2000dxourh5hqdo87" data-title="数组与指针" class="article-share-link">Share</a>
       
       
       
@@ -341,7 +381,7 @@ testStatic();   //output 3
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/06/%E5%85%B3%E4%BA%8E%E6%A0%88%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AE%A4%E7%9F%A5/" data-id="ckw4my6zh000a9wurcj009fo8" data-title="关于栈的基本认知" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/06/%E5%85%B3%E4%BA%8E%E6%A0%88%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AE%A4%E7%9F%A5/" data-id="ckwaol0t2000cxour5ilafv99" data-title="关于栈的基本认知" class="article-share-link">Share</a>
       
       
       
@@ -426,7 +466,7 @@ return high;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/04/%E5%88%A9%E7%94%A8%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" data-id="ckw4my6zi000b9wur28mqcfhn" data-title="利用递归实现快速排序" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/04/%E5%88%A9%E7%94%A8%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" data-id="ckwaol0t1000bxourhb6oh229" data-title="利用递归实现快速排序" class="article-share-link">Share</a>
       
       
       
@@ -465,37 +505,7 @@ return high;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/04/C%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" data-id="ckw4my6z400009wurdqykdxhs" data-title="C语言函数学习中的一些注意事项" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-newpapername-1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/10/27/newpapername-1/" class="article-date">
-  <time class="dt-published" datetime="2021-10-27T05:22:01.865Z" itemprop="datePublished">2021-10-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <hr>
-<p>title: C语言提高效率的一些方法<br>date: 2021-10-27 13:22:01<br>tags:—<br>1.定义时节约内存，如int会占用4字节的内存而short只会占用2字节的内存，若无必要<br>尽量节约内存，这样可以提高运行效率。<br>2.运算时尽量减少运算步骤，根据实际情况减少运算步骤来提高效率。<br>3.当switch语句中的case标号很多时，为了减少比较的次数，可以使用嵌套switch语句。<br>把发生频率高的case标号放在一个switch语句中，并且是嵌套switch语句的最外层，发<br>生相对频率相对低的case标号放在另一个switch语句中。<br>4.当返回的函数值不需要被用到，可以使用void使函数值不被返回，可以提高程序效率。<br>5.使用增量和减量操作符。在使用到加一和减一操作时尽量使用增量和减量操作符，效率<br>要高于赋值语句。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/10/27/newpapername-1/" data-id="ckw4my6za00039wurbvzn1dfy" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/04/C%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" data-id="ckwaol0sr0000xourglxn1tl7" data-title="C语言函数学习中的一些注意事项" class="article-share-link">Share</a>
       
       
       
@@ -543,6 +553,10 @@ return high;
       <ul>
         
           <li>
+            <a href="/2021/11/22/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A3/">php基础语法学习Ⅳ</a>
+          </li>
+        
+          <li>
             <a href="/2021/11/18/php%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%85%A2/">php基础语法学习Ⅲ</a>
           </li>
         
@@ -556,10 +570,6 @@ return high;
         
           <li>
             <a href="/2021/11/15/burp%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A8%A1%E5%9D%97%E7%9A%84%E5%88%9D%E6%AD%A5%E8%AE%A4%E8%AF%86/">burp的基本模块的初步认识</a>
-          </li>
-        
-          <li>
-            <a href="/2021/11/13/%E5%85%B3%E4%BA%8E%E6%8C%87%E9%92%88%E6%B5%85%E5%AD%A6%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BA%8B%E9%A1%B9/">关于指针浅学的一些事项</a>
           </li>
         
       </ul>
